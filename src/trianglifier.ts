@@ -52,8 +52,8 @@ const trianglifier = trianglify({
   width: argv.width,
   height: argv.height,
   cellSize: argv.cellSize,
-  ...(argv.xcolors && { xColors: JSON.parse(argv.xcolors) }),
-  ...(argv.ycolors && { yColors: JSON.parse(argv.ycolors) }),
+  ...(argv.xcolors && { xColors: argv.xcolors }),
+  ...(argv.ycolors && { yColors: argv.ycolors }),
   variance: argv.variance,
 });
 
