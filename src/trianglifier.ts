@@ -54,7 +54,7 @@ const trianglifier = trianglify({
   cellSize: argv.cellSize,
   ...(argv.xcolors && { xColors: argv.xcolors }),
   ...(argv.ycolors && { yColors: argv.ycolors }),
-  variance: argv.variance,
+  variance: 0.75,
 });
 
 // print out the base64 encoded SVG or PNG data to the console
