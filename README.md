@@ -40,6 +40,13 @@ You can then supply the color list using the --xcolors (and --ycolors) options:
 --xcolors "#e0ecf4" "#9ebcda" "#8856a7"
 ```
 
+## Example
+
+Create an svg background similar to the one used on https://furl.ai:
+```bash
+docker run --rm -it trianglifier -f svg --xcolors "#810f7c" "#8856a7" "#8c96c6" "#b3cde3" "#edf8fb" > foo.svg
+```
+
 ## License
 
 This code is licensed under MIT. Trianglify is licensed under dual commercial/GPL3.
