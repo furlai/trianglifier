@@ -4,16 +4,10 @@ Creates an image using github.com/qrohlf/trianglify
 
 See also: https://trianglify.io/
 
-## 📦 Building
+## 🚀 Usage / Quickstart
 
 ```bash
-docker build -t trianglifier -f Dockerfile
-```
-
-## 🛠 Usage
-
-```bash
-docker run --rm -it trianglifier --help
+docker run --rm -it furlai/trianglifier --help
 Options:
       --version   Show version number                                  [boolean]
       --xcolors   Set the X-axis colors, each separated by a space in hex format
@@ -49,6 +43,12 @@ docker run --rm -it trianglifier -f svg --xcolors "#810f7c" "#8856a7" "#8c96c6" 
 ```
 
 ![Example](example.svg)
+
+## 📦 Building locally
+
+```bash
+docker build -t trianglifier -f Dockerfile
+```
 
 ## ⚖️ License
 
