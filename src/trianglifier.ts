@@ -36,7 +36,7 @@ const argv = yargs
     description: "Set the variance",
     type: "number",
     alias: "v",
-    default: Math.random(),
+    default: 0.75,
   })
   .option("format", {
     description: "Choose the format",
@@ -54,7 +54,7 @@ const trianglifier = trianglify({
   cellSize: argv.cellSize,
   ...(argv.xcolors && { xColors: argv.xcolors }),
   ...(argv.ycolors && { yColors: argv.ycolors }),
-  variance: 0.75,
+  variance: argv.variance,
 });
 
 // print out the base64 encoded SVG or PNG data to the console

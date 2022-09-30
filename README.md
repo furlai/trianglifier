@@ -23,7 +23,7 @@ Options:
   -c, --cellSize  Set the cell size                      [number] [default: 100]
   -w, --width     Set the width                         [number] [default: 1920]
   -h, --height    Set the height                        [number] [default: 1080]
-  -v, --variance  Set the variance        [number] [default: 0.9437169291104992]
+  -v, --variance  Set the variance                      [number] [default: 0.75]
   -f, --format    Choose the format
                                [string] [choices: "png", "svg"] [default: "png"]
       --help      Show help                                            [boolean]
@@ -43,6 +43,7 @@ You can then supply the color list using the --xcolors (and --ycolors) options:
 ## 👀 Example
 
 Create an svg background similar to the one used on https://furl.ai:
+
 ```bash
 docker run --rm -it trianglifier -f svg --xcolors "#810f7c" "#8856a7" "#8c96c6" "#b3cde3" "#edf8fb" > example.svg
 ```
