@@ -39,7 +39,7 @@ You can then supply the color list using the --xcolors (and --ycolors) options:
 Create an svg background similar to the one used on https://furl.ai:
 
 ```bash
-docker run --rm -it trianglifier -f svg --xcolors "#810f7c" "#8856a7" "#8c96c6" "#b3cde3" "#edf8fb" > example.svg
+docker run --rm -it furlai/trianglifier -f svg --xcolors "#810f7c" "#8856a7" "#8c96c6" "#b3cde3" "#edf8fb" > example.svg
 ```
 
 ![Example](example.svg)
