@@ -31,6 +31,6 @@ jobs:
             context: .
             file: ./Dockerfile
             push: true
-            tags: ${{ secrets.DOCKER_HUB_USERNAME }}/furlai:latest
-            cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/trianglifier:buildcache
-            cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/trianglifier:buildcache,mode=max
+            tags: ${{ secrets.DOCKER_HUB_USERNAME }}/trianglifier:latest
+            cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/furlai:buildcache
+            cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/furlai:buildcache,mode=max
