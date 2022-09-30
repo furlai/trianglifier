@@ -47,7 +47,7 @@ docker run --rm -it furlai/trianglifier -f svg --xcolors "#810f7c" "#8856a7" "#8
 ## 📦 Building locally
 
 ```bash
-docker build -t trianglifier -f Dockerfile
+docker build -t trianglifier -f Dockerfile .
 ```
 
 ## ⚖️ License
