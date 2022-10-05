@@ -1,8 +1,10 @@
 # Trianglifier
 
-Creates an image using [qrohlf/trianglify](https://github.com/qrohlf/trianglify)
+A docker containerized CLI version of [qrohlf/trianglify](https://github.com/qrohlf/trianglify)
 
 See also: https://trianglify.io/
+
+Docker images for this project are pushed to dockerhub: https://hub.docker.com/r/furlai/trianglifier
 
 ## 🚀 Usage / Quickstart
 
